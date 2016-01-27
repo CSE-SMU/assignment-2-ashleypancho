@@ -1,0 +1,155 @@
+.center {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.face {
+    border-radius: 50px;
+    background: #75F514;
+    width: 120px;
+    height: 130px;
+}
+
+.eyes {
+  width: 125px;
+  height: 125px;
+}
+
+.eye {
+  float: left;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 25px;
+  border-radius: 50%;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+}
+
+.eye::after{
+  content:"•";
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  background: #8B4513;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  margin-left: 6px;
+  margin-top: 8px;
+}
+
+.eye::before { /*eyebrows*/
+  content:"";
+  display: block;
+  border-left: 5px solid #8B4513;
+  border-top: 3px solid #8B4513;
+  border-top-left-radius: 5px;
+}
+
+.nose {
+  background: #75DD14;
+  border-radius: 50%;
+  margin-top: 15px;
+  height: 35px;
+  width: 25px;
+}
+
+.nose::after {
+  content: "• •";
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  border-radius: 50px;
+  text-size: 20px;
+  background: #75DD14;
+  height: 15px;
+  width: 25px;
+}
+
+.mouth {
+  overflow: hidden;
+  margin-top: 50px;
+  height: 30px;
+  width: 60px;
+}
+
+.mouth::before {
+  content: "";
+  display: block;
+  background: black;
+  margin-top: -10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 60px;
+}
+
+.mouth::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  margin-top: -15px;
+  margin-left: 7px;
+  background: red;
+  height: 15px;
+  width: 45px;
+}
+
+.hair {
+  overflow: hidden;
+  margin-top: -20px;
+  height: 60px;
+  width: 120px;
+}
+
+.hair::before {
+  content: "";
+  display: block;
+  background: #8B4513;
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+.hair::after {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 50px solid #75F514;
+	margin-top: -70%;
+	margin-left: 10%;
+}
+
+.ears {
+  overflow: hidden;
+  height: 50px;
+  width: 500px;
+}
+
+.ears::before {
+  content: "";
+  display: block;
+  float: left;
+  background: #75F514;
+  margin-left: 130px;
+  border-radius: 50%;
+  height: 20px;
+  width: 70px;
+}
+
+.ears::after {
+  content: "";
+  float: left;
+  display: block;
+  background: #75F514;
+  margin-left: 100px;
+  border-radius: 50%;
+  height: 20px;
+  width: 70px;
+}
